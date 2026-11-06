@@ -1,11 +1,13 @@
 html,body{margin:0;height:100%;overflow:hidden;background:#fff;-webkit-tap-highlight-color:transparent}
-.layer{position:fixed;inset:0;opacity:0;pointer-events:none;transition:opacity var(--fade,400ms) ease}
+.layer{position:fixed;inset:0;overflow:hidden;opacity:0;pointer-events:none;transition:opacity var(--fade,400ms) ease}
 .layer.on{opacity:1;pointer-events:auto}
-#splash{background:#fff} iframe{border:0;width:100%;height:100%;display:block}
+#splash{background:#fff}
+.layer iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+#main.on{z-index:6}
 #title{background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;font-family:-apple-system,"Malgun Gothic","Noto Sans KR",sans-serif;padding:24px;box-sizing:border-box}
 #title img{width:112px;height:112px;border-radius:26px;box-shadow:0 8px 24px rgba(21,42,85,.2)}
 #title h1{margin:8px 0 0;font-size:30px;color:var(--theme)} #title p{margin:0;font-size:15px;color:#5a6a85}
 #title.on img,#title.on h1,#title.on p{animation:up .6s ease both} #title.on h1{animation-delay:.08s} #title.on p{animation-delay:.16s}
 @keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-#tap{position:fixed;inset:0;z-index:5} #main.on~#tap,#main.on+#tap{display:none}
+#tap{position:fixed;inset:0;z-index:5} #main.on~#tap,#main.on+#tap{display:none;pointer-events:none}
 @media (prefers-reduced-motion: reduce){.layer{transition:none}#title.on *{animation:none!important}}

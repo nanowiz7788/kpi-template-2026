@@ -1,4 +1,4 @@
-#gate{z-index:30;background:#fff;display:flex;align-items:center;justify-content:center;padding:calc(24px + env(safe-area-inset-top,0px)) 24px calc(24px + env(safe-area-inset-bottom,0px));font-family:-apple-system,"Malgun Gothic","Noto Sans KR",sans-serif}
+#gate{z-index:30;background:#fff;display:flex;align-items:center;justify-content:center;overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:pan-y;padding:calc(24px + env(safe-area-inset-top,0px)) 24px calc(24px + env(safe-area-inset-bottom,0px));font-family:-apple-system,"Malgun Gothic","Noto Sans KR",sans-serif}
 #gate form{width:min(100%,420px);display:flex;flex-direction:column;align-items:stretch;text-align:center;gap:0}
 #gate img{width:88px;height:88px;border-radius:22px;margin:0 auto 8px;box-shadow:0 8px 24px rgba(21,42,85,.2)}
 #gate h1{margin:8px 0 0;font-size:26px;line-height:1.25;color:var(--theme,#152a55)}
