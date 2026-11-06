@@ -1,0 +1,15 @@
+#gate{z-index:30;background:#fff;display:flex;align-items:center;justify-content:center;padding:calc(24px + env(safe-area-inset-top,0px)) 24px calc(24px + env(safe-area-inset-bottom,0px));font-family:-apple-system,"Malgun Gothic","Noto Sans KR",sans-serif}
+#gate form{width:min(100%,420px);display:flex;flex-direction:column;align-items:stretch;text-align:center;gap:0}
+#gate img{width:88px;height:88px;border-radius:22px;margin:0 auto 8px;box-shadow:0 8px 24px rgba(21,42,85,.2)}
+#gate h1{margin:8px 0 0;font-size:26px;line-height:1.25;color:var(--theme,#152a55)}
+#gate .gate-team{margin:8px 0 0;font-size:14px;font-weight:700;color:#152a55}
+#gate .gate-help{margin:8px 0 18px;font-size:13px;line-height:1.5;color:#5a6a85}
+#gate label{align-self:flex-start;font-size:12px;font-weight:700;color:#5a6a85;margin:0 0 6px}
+#gate input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:12px 12px;border:1px solid #c9d4e6;border-radius:12px;background:#fff;color:#1c2b45}
+#gate input:focus{outline:2px solid #152a55;border-color:#152a55}
+#gate button{margin-top:12px;font:inherit;font-size:16px;font-weight:700;color:#fff;background:#152a55;border:0;border-radius:12px;padding:13px 14px}
+#gate button:disabled{opacity:.6}
+#gate [role="alert"]{margin:12px 0 0;font-size:13px;line-height:1.45;color:#d6453d;font-weight:700}
+html.j3-known #gate{display:none!important}
+body:has(#gate) #tap{display:none}
+body:has(#gate) #main,body:has(#gate) #title,body:has(#gate) #splash{visibility:hidden!important}

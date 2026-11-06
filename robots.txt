@@ -1,0 +1,3 @@
+# Crawling preference only. This file does not restrict access.
+User-agent: *
+Disallow: /
